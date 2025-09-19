@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixin" as mixin;
+.about-wrap {
+	position: relative;
+
+	.title {
+		font-size: 3rem;
+		color: variables.$color-primary;
+		opacity: 0.3;
+		font-weight: 900;
+		letter-spacing: -1px;
+	}
+	p {
+		line-height: 180%;
+		font-size: 1.1rem;
+	}
+	@include mixin.tabletAndMobile {
+		.title {
+			font-size: 2rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+.title-section-sub {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.gallery-detail-img-wrap {
+	width: 70%;
+	margin: 2rem auto;
+	@include mixin.mobile {
+		width: 100%;
+	}
+}

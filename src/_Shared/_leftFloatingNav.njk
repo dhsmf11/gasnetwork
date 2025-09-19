@@ -1,0 +1,21 @@
+<!--SNS 바로가기 기능 Start-->
+{% if setting.floatngNavIsShow == true %}
+<aside id="FloatingNav" class="left-floating-nav">
+	{% for sns in setting.snsInfo %} {% if sns.isShow == true %}
+	<a href="{{ sns.url }}" alt="일등도시가스 {{ sns.name }} 상담하기" title="일등도시가스 {{ sns.name }} 상담하기">
+		<img src="{{ assetroot }}{{ sns.iconPath }}" alt="{{ sns.name }} 로고" />
+		{{ sns.name }}
+	</a>
+	{% endif %} {% endfor %}
+</aside>
+{% endif %}
+<!--SNS 바로가기 기능 End-->
+
+<!--맨위로 버튼 Start-->
+<button type="button" id="BtnTop" class="btn-top" onclick="GoToTop()">
+	<div>
+		<img src="{{ assetroot }}/images/icon-arr-w.svg" alt="맨위로" />
+		Top
+	</div>
+</button>
+<!--맨위로 버튼 End-->

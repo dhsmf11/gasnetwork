@@ -1,0 +1,46 @@
+{% block header %}
+<!--PC버전 Start-->
+<header id="header" class="header">
+	<div class="container">
+		<a href="/" class="logo" alt="일등도시가스 로고" title="일등도시가스 로고">
+			<img src="{{ assetroot }}/images/logo-w.png" id="HeaderLogo" alt="일등도시가스 로고" />
+		</a>
+		<nav class="nav">
+			<ul>
+				<li><a href="/about">일등도시가스</a></li>
+				<li><a href="/quote">견적문의</a></li>
+				<li><a href="/gallery">시공후기</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!--PC버전 End-->
+
+<!--태블릿 & 모바일버전 Start-->
+<header id="M_Header" class="m-header">
+	<a href="/" class="logo" alt="일등도시가스 로고" title="일등도시가스 로고">
+		<img src="{{ assetroot }}/images/logo.png" id="HeaderLogo" alt="일등도시가스 로고" />
+	</a>
+	<a href="#none" id="Btn_M_Nav" class="btn-nav" onclick="MobileNav()">
+		메뉴
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+</header>
+<nav id="M_Nav" class="m-nav">
+	<ul>
+		<li><a href="/about">일등도시가스</a></li>
+		<li><a href="/quote">견적문의</a></li>
+		<li><a href="/gallery">시공후기</a></li>
+	</ul>
+	<div class="sns-list">
+		{% for sns in setting.snsInfo %} {% if sns.isShow == true %}
+		<a href="{{ sns.url }}" alt="일등도시가스 {{ sns.name }}" title="일등도시가스 {{ sns.name }}">
+			<img src="{{ assetroot }}{{ sns.iconPath }}" alt="{{ sns.name }}로고" />
+		</a>
+		{% endif %} {% endfor %}
+	</div>
+</nav>
+<!--태블릿 & 모바일버전 End-->
+{% endblock header %}

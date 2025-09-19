@@ -1,0 +1,36 @@
+{% block footer %}
+<footer class="footer">
+	<div class="container">
+		<section class="flex-ai-center gap-30">
+			<img src="{{ assetroot }}/images/logo-w.png" class="logo-footer" alt="일등도시가스 로고" title="일등도시가스 홈으로 이동" />
+			<div>
+				<address class="comp-info-wrap">
+					<div><span>대표</span>이재필</div>
+					<div><span>사업자번호</span><span class="color-white">663-85-01068</span></div>
+					<br />
+					<div><span>주소</span>서울시 강동구 아리수로 64길34 2F</div>
+					<br />
+					<div><span>전화번호</span><span class="color-white">02-476-6230</span></div>
+					<div><span>이메일</span>asia89@hanmail.net</div>
+				</address>
+				<div class="copyright">ⓒ 2025. 일등도시가스 All rights reserved.</div>
+			</div>
+		</section>
+		<section>
+			<p class="footer-tel-wrap">
+				문의 및 견적상담<br />
+				<span class="tel">02-476-6230</span>
+			</p>
+			<!--하단 SNS 영역 Start-->
+			<ul class="footer-sms-list">
+				{% for sns in setting.snsInfo %} {% if sns.isShow == true %}
+				<li>
+					<a href="{{ sns.url }}"><img src="{{ assetroot }}{{ sns.iconPath2 }}" alt="일등도시가스 {{ sns.name }}" title="일등도시가스 {{ sns.name }}" /></a>
+				</li>
+				{% endif %} {% endfor %}
+			</ul>
+			<!--하단 SNS 영역 End-->
+		</section>
+	</div>
+</footer>
+{% endblock footer %}

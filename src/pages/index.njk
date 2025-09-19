@@ -1,0 +1,101 @@
+---
+layout: _layout.njk
+title: 일등도시가스 | 도시가스시공
+description: 도시가스 시공업체 일등도시가스입니다. 다양한 산업과 공간에 맞춤 시공한 사례를 확인하세요. 견적문의 02-476-6230
+url: 
+permalink: /index.html
+assetroot: ./asset
+---
+<main>
+    <section class="main-banner">
+        <div class="container">
+            <div>
+                <div class="main-banner-title-sub">서울/경기 도시가스 시공전문</div>
+                <div class="main-banner-title mb-20">
+                    일등 도시가스
+                </div>
+                <div class="btn-right">
+                    <a href="/gallery" title="시공사례" class="btn-primary-dark">시공사례 확인하기</a>
+                    <a href="/quote" title="견적문의" class="btn-primary-light">견적문의하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-pipe">
+        <section class="container section">
+            <h3 class="main-title mb-10">현장에서 증명된 기술력</h3>
+            <h4 class="main-title-sub mb-20">다양한 산업과 공간에 맞춤 시공한 사례를 확인하세요.</h3>
+                <ul class="main-list-1">
+                <!--메인 시공사례 Start-->
+                {% for i in range(0, 3) %} 
+                    <li>
+                        <a href="#none">
+                            <div class="img-wrap">
+                                <img src="./asset/images/testImg_1.png" alt="">
+                            </div>
+                            업체명
+                            <span>시공사례 상세설명 미리보기 텍스트</span>
+                        </a>
+                    </li>
+                {%endfor%}
+                <!--메인 시공사례 End-->
+            </ul>
+        </section>
+        <section  class="container section">
+            <ul class="main-list-2">
+                <li>
+                    <div class="cont">
+                        <span class="title">상업 및 업무용 배관 시공</span>
+                        음식점, 상가, 오피스, 학교 등 다양한 현장경험 보유
+                    </div>
+                </li>
+                <li>
+                    <div class="cont">
+                        <span class="title">주거용 가스 배관 시공</span>
+                        아파트,빌라 등 공동주택 대상 맞춤형 시공
+                    </div>
+                </li>
+                <li>
+                    <div class="cont">
+                        기술을 연결하고,<br>
+                        안전을 이어갑니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="cont">
+                        <span class="title">산업용 배관 시스템 구축</span>
+                        대형 공장 및 생산시설을 위한 가스배관 설계 및 시공
+                    </div>
+                </li>
+                <li>
+                    <div class="cont">
+                        <span class="title">도시가스 관로 시공</span>
+                        중,저압 도시가스관의 도로 및 단지내 매립 시공
+                    </div>
+                </li>
+                <li>
+                    <div class="cont">
+                        <span class="title">도시가스 철거</span>
+                        음식점,상가,오피스,학교 등 도시가스 배관 시설 철거
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <section class="contact-wrap section">
+        <div class="container">
+            <div class="flex">
+                <div class="card p-30 width-40">
+                    <img src="asset/images/logo.png" alt="일등도시가스 로고">
+                    <a href="tel:02-476-6230" alt="02-476-6230" title="전화하기">02-476-6230</a>
+                    <span>
+                        전화번호를 클릭하여 자세한 견적상담을 받아보세요.
+                    </span>
+                </div>
+                <div class="img-wrap">
+                    <img src="asset/images/contact.png" alt="홍보이미지">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

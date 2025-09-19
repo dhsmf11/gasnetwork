@@ -1,0 +1,34 @@
+---
+pagination: 
+  data: gallery 
+  size: 1 
+  alias: item 
+permalink: "galleryDetails/page_{{ item.slug }}.html" 
+layout: _layout.njk 
+title: 일등도시가스 | 도시가스시공 > 시공후기 
+assetroot: ../asset
+---
+
+<div class="page-title-wrap">
+	<div class="container">
+		<div>
+			<h2 class="page-title">시공후기</h2>
+			안전하고 깔끔한 시공사례를 확인해보세요.
+		</div>
+	</div>
+</div>
+
+<section class="container section-sub">
+	<h3 class="title-section-sub">{{item.title}}</h3>
+	<p class="p text-center">{{item.description}}</p>
+	<div class="gallery-detail-img-wrap">
+		{%for i in range(1, item.imgCount+1)%}
+		<img src="{{assetroot}}/images/gallery/g_{{item.slug}}_{{i}}.png" alt="{{item.title}} 시공예시">
+		{%endfor%}
+	</div>
+	<div class="hash-tag-list">
+		{%for tag in item.hashtag%}
+			<span>#{{tag}}</span>
+		{%endfor%}
+	</div>
+</section>

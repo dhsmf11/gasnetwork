@@ -1,0 +1,22 @@
+{
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "~/../../dist/asset/css"
+		}
+	],
+	"compile-hero.typescript-output-directory": "./../../dist/asset/js",
+	"compile-hero.scss-output-toggle": false,
+	"compile-hero.disable-compile-files-on-did-save-code": false,
+	"html.suggest.html5": true,
+	"emmet.includeLanguages": {
+		"njk": "html",
+		"nunjucks": "html"
+	},
+	"files.associations": {
+		"*html": "html",
+		"*njk": "html"
+	},
+	"prettier.ignorePath": ".prettierignore"
+}
