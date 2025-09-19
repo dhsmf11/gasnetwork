@@ -28,7 +28,7 @@ assetroot: ./asset
                 <ul class="main-list-1">
                 <!--메인 시공사례 Start-->
                 {% for item in gallery %} 
-                    {% if loop.index <= 3 %}
+                    {% if item.isMain == true %}
                     <li>
                         <a href="/galleryDetails/page_{{ item.slug }}" title="{{ item.title }}">
                             <div class="img-wrap">
