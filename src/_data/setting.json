@@ -5,29 +5,29 @@
 			"name": "카카오톡",
 			"iconPath": "/images/icon-kakao.png",
 			"iconPath2": "/images/icon-kakao-w.png",
-			"isShow": true,
-			"url": "/test/page1"
+			"isShow": false,
+			"url": ""
 		},
 		{
 			"name": "인스타그램",
 			"iconPath": "/images/icon-insta.png",
 			"iconPath2": "/images/icon-insta-w.png",
-			"isShow": true,
-			"url": "/test/page2"
+			"isShow": false,
+			"url": ""
 		},
 		{
 			"name": "네이버블로그",
 			"iconPath": "/images/icon-blog.png",
 			"iconPath2": "/images/icon-blog-w.png",
-			"isShow": true,
-			"url": "/test/page3"
+			"isShow": false,
+			"url": ""
 		},
 		{
 			"name": "유튜브",
 			"iconPath": "/images/icon-youtube.png",
 			"iconPath2": "/images/icon-youtube-w.png",
-			"isShow": true,
-			"url": "/test/page4"
+			"isShow": false,
+			"url": ""
 		}
 	]
 }
