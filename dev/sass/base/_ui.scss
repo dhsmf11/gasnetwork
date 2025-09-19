@@ -60,6 +60,7 @@ $btnColors: (
 			font-weight: 600;
 			.img-wrap {
 				margin-bottom: 0.6rem;
+				height: 10rem;
 			}
 			span {
 				font-size: 0.8rem;
@@ -72,7 +73,7 @@ $btnColors: (
 			}
 			&:hover {
 				img {
-					transform: scale(1.2, 1.2);
+					transform: translateY(-50%) scale(1.2, 1.2);
 				}
 			}
 		}
@@ -88,6 +89,28 @@ $btnColors: (
 		width: calc((100% / 3) - 0.69rem);
 		height: 200px;
 		background: variables.$color-primary-dark;
+		z-index: 0;
+		overflow: hidden;
+		&:after {
+			@include mixin.afterIcon;
+			width: 100%;
+			height: 100%;
+			background: url(/asset/images/list-bg-1.jpg) no-repeat center/cover;
+			opacity: 0.3;
+			z-index: -1;
+		}
+		@for $i from 2 through 6 {
+			@if ($i != 3) {
+				&:nth-child(#{$i}):after {
+					background: url(/asset/images/list-bg-#{$i}.jpg) no-repeat center/cover;
+				}
+			} @else {
+				&:nth-child(#{$i}):after {
+					display: none;
+				}
+			}
+		}
+
 		.cont {
 			width: 100%;
 			position: absolute;
@@ -164,11 +187,11 @@ $btnColors: (
 				transform: translateY(-3px);
 				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 				img {
-					transform: scale(1.5);
+					transform: translateY(-50%) scale(1.2);
 				}
 			}
 			.img-wrap {
-				min-height: 9rem;
+				height: 10rem;
 			}
 			.cont-wrap {
 				padding: 1rem;
@@ -247,11 +270,12 @@ $btnColors: (
 .img-wrap {
 	overflow: hidden;
 	width: 100%;
-	//min-height: 200px;
+	position: relative;
 	img {
 		width: 100%;
-		//position: relative;
-		//@include mixin.centerXY;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 		transition: 0.2s;
 		vertical-align: top;
 	}

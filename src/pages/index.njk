@@ -27,17 +27,19 @@ assetroot: ./asset
             <h4 class="main-title-sub mb-20">다양한 산업과 공간에 맞춤 시공한 사례를 확인하세요.</h3>
                 <ul class="main-list-1">
                 <!--메인 시공사례 Start-->
-                {% for i in range(0, 3) %} 
+                {% for item in gallery %} 
+                    {% if loop.index <= 3 %}
                     <li>
-                        <a href="#none">
+                        <a href="/galleryDetails/page_{{ item.slug }}" title="{{ item.title }}">
                             <div class="img-wrap">
-                                <img src="./asset/images/testImg_1.png" alt="">
+                                <img src="./asset/images/gallery/g_{{ item.slug }}_1.png" alt="{{ item.title }}">
                             </div>
-                            업체명
-                            <span>시공사례 상세설명 미리보기 텍스트</span>
+                            {{ item.title }}
+                            <span>{{ item.title }}</span>
                         </a>
                     </li>
-                {%endfor%}
+                    {% endif %}
+                {% endfor %}
                 <!--메인 시공사례 End-->
             </ul>
         </section>
