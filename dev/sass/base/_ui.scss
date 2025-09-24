@@ -239,7 +239,21 @@ $btnColors: (
 		border-radius: 15px;
 	}
 }
-
+.dot-list {
+	li {
+		padding-left: 1rem;
+		position: relative;
+		&:after {
+			@include mixin.afterIcon;
+			top: 1%;
+			left: 0;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: variables.$color-gray-200;
+		}
+	}
+}
 .btn-top {
 	display: none;
 	cursor: pointer;
@@ -307,7 +321,7 @@ $btnColors: (
 			font-size: 3rem;
 			font-weight: 900;
 			display: block;
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
 			color: variables.$color-primary;
 		}
 	}
@@ -332,4 +346,10 @@ $btnColors: (
 }
 .p {
 	line-height: 180%;
+}
+.hr {
+	display: inline-block;
+	width: 10%;
+	height: 2px;
+	background: variables.$color-primary;
 }
