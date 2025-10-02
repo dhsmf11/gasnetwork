@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://gasnetwork.netlify.app/</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/about</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/quote</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallery</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_1</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_2</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_3</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_0</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_4</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_5</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_6</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_7</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_8</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_9</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gasnetwork.netlify.app/gallerydetails/page_10</loc>
+  <lastmod>2025-10-02T06:21:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
